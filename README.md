@@ -1,3 +1,14 @@
+Smart Contract Project
+
+In this project we create smart contract that implements the require(), assert() and revert() statements.
+
+This program is a simple contract written in Solidity, a programming language used for developing smart contracts on the Ethereum blockchain.
+
+This program serves as a simple and straightforward introduction to Solidity programming, and can be used as a stepping stone for more complex projects in the future.
+
+CODE
+
+
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.18;
 
@@ -53,3 +64,42 @@ contract Mytoken {
         emit Transfer(msg.sender, _reciever, _value);
     }
 }
+
+CODE EXPLANATION
+
+So I have created this smart contract which we have built,example like my token it is simple token smart contract then with a name 
+called symbol name SIMPLE
+
+Here total supply initialzed with 0 and there is a public like this variable we have initialized
+
+we are using constructor so once we deploy a smmart contract 
+
+We created some function like minting function and burn function and and also a transfer function
+So in this example we have we also have some events like main burn and transfer to record the logs of the event which are happening 
+in this smart contract
+and we define our own custom error in suffering balance and mapping address and balnce to store the mappingof of that balamc
+
+We have one modifier caled only owner so here we are using assert ot check the message and sender of each function is our owner 
+so this function will only called by the owner not any by anyone
+and similarly for burn function and then transfer is public people can call this transfer function
+
+But we have also have required to check if current message or sender balanceof the sender must be greater than the value taht which we want 
+to displayed
+
+
+AUTHOR
+
+ANISH CHOUDHARY 
+
+@Anishakki01
+
+
+LICENECE
+
+// SPDX-License-Identifier: MIT pragma solidity 0.8.18
+SO I test this contract here in remix let's deploy it once more.
+
+
+
+
+
